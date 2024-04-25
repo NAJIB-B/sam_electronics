@@ -1,0 +1,41 @@
+.main_text{
+	font-size: 40px;
+	font-weight: 700;
+	color: #051E3E;
+	padding: 2rem 8rem;
+	padding-bottom: 0px;
+}
+.main_text span{
+	font-weight: 400;
+}
+
+.body_text{
+	padding: 2rem 8rem;
+	color: #7F8185;
+	font-size: 21px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+	.main_text{
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-device-width: 875px) {
+  .main_text{
+	font-size: 26px;
+	padding: 2rem 4rem;
+  }
+.body_text{
+	font-size: 18px;
+	padding: 0px 4rem;
+}
+
+}
+@media only screen and (max-device-width: 560px) {
+	.body_text{
+		font-size: 18px;
+		padding: 0px 2rem;
+	}
+		
+}
