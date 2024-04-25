@@ -47,6 +47,10 @@ nav{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	color: white;
 	z-index: 3;
 }
@@ -56,6 +60,7 @@ nav{
 	font-size: 56px;
 	text-align: center;
 	margin-bottom: 0px;
+	width: 70%;
 }
 .img_normal_text{
 	color: white;
@@ -112,9 +117,11 @@ z-index: 2;
 	bottom: 10%;
 	background-color: #202124;
 	color: white;
-	padding: 20px, 24px, 20px, 24px;
+	padding: 25px 34px;
 	outline: none;
 	border: 1px solid white;
+	font-size: 24px;
+	font-weight: 700;
 
 }
 .slide{
@@ -272,6 +279,16 @@ footer{
 .hidden{
 	display: none;
 }
+.hero button p{
+	margin: 0px;
+}
+
+@media only screen and (max-device-width: 1600px) {
+
+	.img_text{
+		width: 100%;
+}
+}
 @media only screen and (max-device-width: 1200px) {
 	.cards_section{
 		padding: 2rem 4rem;
@@ -316,7 +333,8 @@ footer{
 		font-size: 16px;
 	}
 	.hero button{
-		padding: 15px, 20px, 15px, 20px;
+		padding: 15px 15px;
+		font-size: 18px;
 	}
 	.cards_section{
 		align-items: center;
