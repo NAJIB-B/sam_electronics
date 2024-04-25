@@ -3,11 +3,11 @@ var TEMPLATE_ID = "template_qqxi5wf"
 var USER_ID = "FHDYgIigPYO7jVw2y"
 ///////////////sending form////////////////////////
 
-const form = document.querySelector(".form")
+const form = document.getElementById("myForm")
 
 
 let formDataJSON = {};
-form.addEventListener('submit', (event)=>{
+form.addEventListener('submit', function(event){
 	event.preventDefault(); // Prevent the form from submitting
 
 	// Get form data
@@ -17,8 +17,6 @@ form.addEventListener('submit', (event)=>{
 		formDataJSON[key] = value;
 	});
 console.log(formDataJSON)
-
-})
 
 let data = {
     service_id: SERVICE_ID,
@@ -39,9 +37,12 @@ fetch('https://api.emailjs.com/api/v1.0/email/send', {
 })
 .then(data => {
 	alert("message sent successfully")
-	console.log('POST request successful:', data);
+	// console.log('POST request successful:', data);
 })
 .catch(error => {
 	alert("Something went wrong please try again")
-	console.error('Error:', error);
+	// console.error('Error:', error);
 });
+
+})
+
