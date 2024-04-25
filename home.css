@@ -2,9 +2,8 @@
 	--primary: #1A73E8;
 }
 header{
-	font-weight: 700;
-	color: black;
-	padding-left: 4rem;
+
+	padding: 1rem 4rem;
 }
 
 body{
@@ -381,7 +380,7 @@ footer{
 		font-size: 16px;
 	}
 	.hero button{
-		padding: 10px, 15px;
+		padding: 10px 15px;
 
 	}
 	.card{
@@ -414,5 +413,37 @@ footer{
 		.footer_right{
 			gap: 1rem;
 		}
+		header{
+			padding-left: 2rem;
+		}
+		nav{
+
+			padding: 1.5rem 2rem;
+		}
 		
+}
+@media only screen and (max-device-width: 450px) {
+	.img_text{
+		width: 60vw;
+}
+	.img_text{
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.img_faded_text{
+		font-size: 15px;
+		width: 60vw;
+	}
+	.hero button{
+		padding: 8px 15px;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	header{
+		padding-left: 1rem;
+	}
+	nav{
+
+		padding: 1.5rem 1rem;
+	}
 }
