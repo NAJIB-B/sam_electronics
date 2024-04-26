@@ -33,8 +33,12 @@
 
 }
 @media only screen and (max-device-width: 560px) {
+	.main_text{
+		font-size: 21px;
+		padding: 10px 2rem;
+	  }
 	.body_text{
-		font-size: 18px;
+		font-size: 16px;
 		padding: 0px 2rem;
 	}
 		

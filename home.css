@@ -13,12 +13,11 @@ body{
 	overflow-x: hidden;
 }
 
-nav{
+.nav{
 	display: flex;
 	flex: row;
 	gap: 4rem;
 	background-color: var(--primary);
-	width: 100%;
 	padding: 1.5rem 4rem;
 }
 .nav_link{
@@ -247,7 +246,7 @@ width: 100%;
 	font-size: 27px;
 	color: black;
 }
-.footer_top_inner button{
+.footer_top_btn{
 	align-items: center;
 	background-color: #202124;
 	padding: 0px 42.44px;
@@ -287,8 +286,16 @@ footer{
 	.img_text{
 		width: 100%;
 }
+.footer_top_btn{
+    padding: 0px 40px;
+	font-size: 18px;
+}
 }
 @media only screen and (max-device-width: 1200px) {
+	.footer_top_btn{
+
+		font-size: 18px;
+	}
 	.cards_section{
 		padding: 2rem 4rem;
 		gap: 2rem;
@@ -306,12 +313,14 @@ footer{
 	.footer_top_inner{
 		padding: 2rem 4rem;
 	}
+
 	footer{
 		padding: 2rem 4rem;
 	}
 	.after_cards{
 		gap: 2rem;
 	}
+
 }
 @media only screen and (max-device-width: 1070px) {
     .img_text{
@@ -416,13 +425,45 @@ footer{
 		header{
 			padding-left: 2rem;
 		}
-		nav{
+		.nav{
 
 			padding: 1.5rem 2rem;
+		}
+		footer{
+			padding: 2rem 2rem;
+		}
+		.cards_section{
+			padding: 2rem 2rem;
+			gap: 2rem;
+		}
+		.after_cards{
+			padding: 2rem 2rem;
+		}
+		.product_inner{
+			padding: 2rem 2rem;
+		}
+		.product_cards_section{
+			padding: 2rem 2rem;
+			gap: 2rem;
+		}
+		.footer_top_inner{
+			padding: 2rem 2rem;
+
+		}
+		.footer_top_inner h4{
+			font-size: 21px;
+		}
+		.footer_top_inner button{
+			font-size: 16px;
+			padding: 15px 20.44px;
+			font-weight: 600;
 		}
 		
 }
 @media only screen and (max-device-width: 450px) {
+	.nav{
+		justify-content: center;
+	}
 	.img_text{
 		width: 60vw;
 }
@@ -442,8 +483,30 @@ footer{
 	header{
 		padding-left: 1rem;
 	}
-	nav{
+	.nav{
 
 		padding: 1.5rem 1rem;
+	}
+
+	footer{
+		padding: 2rem 1rem;
+	}
+	.cards_section{
+		padding: 2rem 2rem;
+		gap: 2rem;
+	}
+	.after_cards{
+		padding: 2rem 1rem;
+	}
+	.product_inner{
+		padding: 2rem 1rem;
+	}
+	.product_cards_section{
+		padding: 2rem 1rem;
+		gap: 2rem;
+	}
+	.footer_top_inner{
+		padding: 2rem 1rem;
+
 	}
 }

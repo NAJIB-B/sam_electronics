@@ -59,6 +59,9 @@ font-weight: bold;
 		.top_section{
 			flex-direction: column;
 		}
+		.top_section .text{
+			width: 100%;
+		}
 		.top_section img{
 			width: 60vw;
 		}
@@ -109,7 +112,7 @@ font-weight: bold;
 			width: 80vw;
 		}
 		.body_text{
-			font-size: 18px;
+			font-size: 16px;
 			padding: 0px 2rem;
 		}
 		
